@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>bitworld.gg - A Pixel Life Simulation Game</title>
+    <link rel="icon" type="image/svg+xml" href="assets/ui/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+</head>
+<body class="game-page">
+    <div class="game-wrapper">
+        <div class="game-header">
+            <div class="game-header-left">LIVE CAMERA</div>
+            <div class="viewer-count" id="viewerCount">1 viewer</div>
+        </div>
+        <div id="game-container"></div>
+    </div>
+
+
+    <script src="js/GameConfig.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/components/PlayerSprite.js"></script>
+    <script src="js/components/Sidebar.js"></script>
+    <script src="js/managers/AnimationManager.js"></script>
+    <script src="js/managers/BuildingManager.js"></script>
+    <script src="js/managers/EnvironmentManager.js"></script>
+    <script src="js/managers/InputManager.js"></script>
+    <script src="js/managers/ElevatorManager.js"></script>
+    <script src="js/managers/DoorManager.js"></script>
+    <script src="js/GameScene.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+    </script>
+</body>
+</html>
